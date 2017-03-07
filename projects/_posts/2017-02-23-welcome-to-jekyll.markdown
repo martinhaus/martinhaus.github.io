@@ -1,0 +1,29 @@
+---
+layout: post
+title: "Systém informačného vysielania"
+date: 2017-02-23
+---
+
+### Opis projektu
+Projekt je zameraný na implementáciu a nasadenie informačného systému pre potreby FIIT STU.
+Systém je postavený na CMS WordPress, pričom pre potreby fakulty bolo nutné ho rozšíriť prostredníctvom vytvorenia série vlastných plug-inov.
+
+
+### Základné funkcie projektu
+Informačný systém poskytuje jednoduchý spôsob pridávania a správy obsahu na prezentačné obrazovky na FIIT STU. Základná funkcionalita systému WordPress bola rozšírená o možnosť pridávania oznamov, plagátov, informácií o počasí a MHD. Do systému bola takisto dolpnená možnosť zobrazovania rozvrhov na základe dát z AIS.
+
+Hlavné rozšírenie systému predstavuje možnosť zoskupovania jednotlivých stránok systému do sekvencií stránok, ktoré je následne možné umiestňovať na jednotlivé obrazovky. Používateľovi je tak umožnená kompletná správa systému bez nutnosti fyzickej výmeny médií zapojených do obrazoviek.
+
+### Technické informácie
+
+#### Implementácia
+Systém je založnený na systéme WordPress, pričom je rozšírený o sériu plug-inov. Plug-iny sú písané v jazyku PHP, HTML a JavaScript. Na ukladanie údajov využíva systém MySQL databázu.
+
+#### Nasadenie systému
+Systém je nasadený na virtuálnom fakultnom stroji. Na danom systéme je nasadený operačný systém Ubuntu Server 14.04, obsahujúci inštaláciu Apache2 a MariaDB, ktoré umožňujú samotnú prevádzku systému.
+
+Na strane prezentačných obrazoviek sú použité počítače RaspberryPi 3, s inštaláciou webového prehliadača Chromium, ktorý zobrazuje stránky prezentačného systému.
+
+
+### Stav projektu
+Vývoj rozšírení pre systém ešte nie je ukončený a systém je postupne doplňovaný o novú funkcionalitu. Systém bude v najbližšej dobre doplnený o funkciu zobrazovania kamerového záznamu z auly, čo umožní okoloidúcim na chodbe vidieť, čo sa v aulách deje, bez nutnosti vstupu do miestnosti a narúšaniu výuky.

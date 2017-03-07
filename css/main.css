@@ -1,4 +1,4 @@
-body {
+/*body {
     margin: 60px auto;
     width: 70%;
 }
@@ -40,4 +40,19 @@ ul.posts {
 
 ul.posts li {
     list-style: none;
+}
+*/
+
+.footer-links {
+  text-decoration: none;
+  list-style-type: none;
+}
+
+.footer-links li {
+  display: inline;
+  margin-right: 5px;
+}
+
+.cv-list li {
+  list-style-type: none;
 }
