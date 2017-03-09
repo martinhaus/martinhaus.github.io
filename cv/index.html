@@ -1,11 +1,12 @@
 ---
 layout: project
 title: Životopis
+author: Martin Hauskrecht
 ---
 
 <h2>Osobné údaje</h2>
 <p>
-  <b>Meno:</b> Martin Hauskrecht
+  <b>Meno:</b> {{page.author}}
   <br>
   <b>Bydlisko:</b> Medená 21, 811 02 Bratislava
   <br>
@@ -19,15 +20,17 @@ title: Životopis
   <div class="row">
 
     <table>
+      {% for study in site.data.studies.studies %}
       <tr>
-        <td class="col-md-2">2014 - súčastosť</td>
-        <td class="col-md-8">Fakulta informatiky a informačných technológií, Slovenská technická univerzita</td>
-      </tr>
+        <td class="col-md-2">{{ study.start_year }} - {{ study.end_year }}</td>
+        <td class="col-md-8">
+          {{ study.name }}
+          <br>
+          {{ study.adress }}
+        </td>
 
-      <tr>
-        <td class="col-md-2">2010 - 2014</td>
-        <td class="col-md-8">Gymnázium Jura Hronca, Novohradská 3 Bratislava</td>
       </tr>
+      {% endfor %}
     </table>
   </div>
 </p>
@@ -37,12 +40,16 @@ title: Životopis
 <p>
   <div class="row">
     <table>
+      {% for job in site.data.work_experience.jobs %}
       <tr>
-        <td class="col-md-2">2015 - súčastosť</td>
+        <td class="col-md-2">{{ job.start_year }} - {{ job.end_year }}</td>
         <td class="col-md-8">
-          Fakulta informatiky a informačných technológií, Slovenská technická univerzita
+          {{ job.institution }}
+          <br>
+          <i>{{ job.position }}</i>
         </td>
       </tr>
+      {% endfor %}
     </table>
   </div>
 </p>
@@ -53,23 +60,15 @@ title: Životopis
 <div class="row">
   <p>
     <table>
+      {% for language in site.data.programming_languages.languages %}
       <tr>
-        <td class="col-md-2">Java</td>
-        <td class="col-md-6">pokročilý</td>
+        <td class="col-md-2">{{ language.name }}</td>
+        <td class="col-md-6">{{ language.level }}</td>
       </tr>
-      <tr>
-        <td class="col-md-2">C</td>
-        <td class="col-md-6">pokročilý</td>
-      </tr>
-      <tr>
-        <td class="col-md-2">Python</td>
-        <td class="col-md-6">mierne pokročilý</td>
-      </tr>
-      <tr>
-        <td class="col-md-2">PHP</td>
-        <td class="col-md-6">pokročilý</td>
-      </tr>
+      {% endfor %}
+
     </table>
+
   </p>
 
 </div>

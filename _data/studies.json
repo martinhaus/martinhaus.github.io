@@ -1,0 +1,12 @@
+{
+  "studies": [
+    { "name": "Fakulta informatiky a informačných technológií, Slovenská technická univerzita",
+      "adress":"Ilkovičova 2, 811 02 Bratislava",
+      "start_year":"2014",
+      "end_year": "" },
+    { "name": "Gymnázium Jura Hronca",
+       "adress":"Novohradská 3",
+        "start_year":"2010",
+         "end_year": "2014" }
+  ]
+}
