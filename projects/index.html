@@ -9,7 +9,7 @@ title: Projekty
 	<div class="col-md-6">
 		<h3><a href="{{ post.url }}" title="{{ post.title }}"> {{ post.title }}</a></h3>
 		<small class="">{{ post.date | date_to_string }}</small>
-		<p>{{ post.excerpt }}</p>
+		<p>{{ post.excerpt | markdownify }}</p>
 		<hr>
 	</div>
 

@@ -2,9 +2,9 @@
 layout: post
 title: "Systém informačného vysielania"
 date: 2017-02-23
+tags: ['bananatv', 'fiit']
 ---
 
-### Opis projektu
 Projekt je zameraný na implementáciu a nasadenie informačného systému pre potreby FIIT STU.
 Systém je postavený na CMS WordPress, pričom pre potreby fakulty bolo nutné ho rozšíriť prostredníctvom vytvorenia série vlastných plug-inov.
 

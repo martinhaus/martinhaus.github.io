@@ -2,7 +2,13 @@
 layout: default
 ---
 <h1>{{ page.title }}</h1>
-<p class="meta">{{ page.date | date_to_string }}</p>
+<div class="row">
+  <span class="col-md-3">Napísané dňa {{ page.date | date_to_string }}</span>
+  <small class="col-md-2">V tomto článku je {{ page.content | number_of_words }} slov.</small>
+  <small class=col-md-2>Tagy: {{ page.tags | sort | array_to_sentence_string }}</small>
+
+</div>
+<hr>
 
 <div class="post">
   {{ content }}
