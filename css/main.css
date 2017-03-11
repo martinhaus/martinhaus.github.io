@@ -14,4 +14,9 @@
 
 .edit-date {
   margin-top: 50px;
+  display: block;
+}
+
+.overwiev {
+  width: 50%;
 }
